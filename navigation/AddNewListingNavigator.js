@@ -2,6 +2,8 @@ import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 import { Text } from 'react-native';
 
+import AddNewImage from '../components/AddNewImage/AddNewImage';
+
 const Tweet = () => <Text>Hello3</Text>;
 
 const Stack = createStackNavigator();
