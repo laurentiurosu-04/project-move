@@ -4,10 +4,10 @@ import { MaterialCommunityIcons } from '@expo/vector-icons';
 
 import FeedNavigator from './FeedNavigator';
 import AccountNavigator from './AccountNavigator';
-import AddNewListingNavigator from './AddNewListingNavigator';
 
-import AddNewItemScreen from '../screens/AddNewItemScreen';
-import AccountScreen from '../screens/AccountScreen';
+import AddNewListingNavigator from './AddNewListingNavigator';
+// import AddNewItemScreen from '../components/ImageInput/ImageInputNewItem';
+// import AccountScreen from '../screens/AccountScreen';
 // import AccountNavigator from "./AccountNavigator";
 // import ListingEditScreen from "../screens/ListingEditScreen";
 // import NewListingButton from "./NewListingButton";
