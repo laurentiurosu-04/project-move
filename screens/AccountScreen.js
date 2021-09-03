@@ -45,7 +45,7 @@ function AccountScreen({ navigation }) {
       <View style={styles.container}>
         <ListItem
           title={user.email}
-          subTitle="programmingwithmosh@gmail.com"
+          // subTitle={user.secondName}
           // image={require('../assets/mosh.jpg')}
         />
       </View>

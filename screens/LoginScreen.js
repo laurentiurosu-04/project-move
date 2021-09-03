@@ -8,6 +8,7 @@ import Firebase from '../config/firebase';
 const auth = Firebase.auth();
 
 export default function LoginScreen({ navigation }) {
+  // const [username, setUsername] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [passwordVisibility, setPasswordVisibility] = useState(true);

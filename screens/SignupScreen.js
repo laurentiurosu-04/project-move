@@ -9,6 +9,9 @@ import Firebase from '../config/firebase';
 const auth = Firebase.auth();
 
 export default function SignupScreen({ navigation }) {
+  const [firstName, setFirstName] = useState('');
+  const [secondName, setSecondName] = useState('');
+  const [username, setUsername] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [passwordVisibility, setPasswordVisibility] = useState(true);
@@ -41,8 +44,37 @@ export default function SignupScreen({ navigation }) {
       <Text style={styles.title}>Create new account</Text>
       <InputField
         style={styles.field}
-        leftIcon="email"
-        placeholder="Enter email"
+        placeholder="Type First Name"
+        autoCapitalize="none"
+        keyboardType="email-address"
+        textContentType="emailAddress"
+        autoFocus={true}
+        value={firstName}
+        onChangeText={(text) => setFirstName(text)}
+      />
+      <InputField
+        style={styles.field}
+        placeholder="Type Second Name"
+        autoCapitalize="none"
+        keyboardType="email-address"
+        textContentType="emailAddress"
+        autoFocus={true}
+        value={secondName}
+        onChangeText={(text) => setSecondName(text)}
+      />
+      <InputField
+        style={styles.field}
+        placeholder="Type Username"
+        autoCapitalize="none"
+        keyboardType="email-address"
+        textContentType="emailAddress"
+        autoFocus={true}
+        value={username}
+        onChangeText={(text) => setUsername(text)}
+      />
+      <InputField
+        style={styles.field}
+        placeholder="Type email"
         autoCapitalize="none"
         keyboardType="email-address"
         textContentType="emailAddress"
@@ -53,7 +85,7 @@ export default function SignupScreen({ navigation }) {
       <InputField
         style={styles.field}
         leftIcon="lock"
-        placeholder="Enter password"
+        placeholder="Type password"
         autoCapitalize="none"
         autoCorrect={false}
         secureTextEntry={passwordVisibility}
@@ -90,7 +122,7 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: '600',
     color: '#fff',
-    alignSelf: 'center',
+    alignSelf: 'cType',
     paddingBottom: 24,
   },
 });
