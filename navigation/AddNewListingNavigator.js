@@ -12,7 +12,7 @@ const FeedNavigator = () => (
   <Stack.Navigator mode="modal" screenOptions={{ headerShown: false }}>
     <Stack.Screen
       name="Listings"
-      component={Tweet}
+      component={AddNewImage}
       options={{ headerShown: false }}
     />
   </Stack.Navigator>
